@@ -1,4 +1,4 @@
-# Javascript debugging: RIP alert()
+# Javascript debugging: RIP alert() - Part I
 
 For those who started working with Javascript years ago, life wasn't as good as it is now. The Javascript ecosystem has evolved so much in the last decade. Now we even build our backend in JS thanks to nodejs.
 
@@ -156,7 +156,7 @@ Back end development in Javascript is quiet new. The only real platform used is 
 
 Since the code is back end, it's not executed inside a Web Browser, so none of the tools above can be used. There are alternatives, tough.
 
-But I think it's enough for today, I'll write about the tools I found useful for line by line debugging and console logging (since node.js implementation is not fully featured) on part II!
+But I think it's enough for today, I'll write about the tools I found useful for line by line debugging and console logging (since node.js implementation is not fully featured) on Part II!
 
 ## To be continued!
 
