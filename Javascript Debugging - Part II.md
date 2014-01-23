@@ -87,7 +87,7 @@ Among the cool features of *node-inspector*
 ### Conclusion
 
 By using any of these tools, developing and debugging will be much easier and that helps to reduce the number of runtime errors.
-Using the console and logging is still very helpful, but techniques complement. Logging is your best friend when analyzing a bug on production code and it also helps while debugging. 
+Using the console and logging is still very helpful, but the two techniques complement. Logging is your best friend when analyzing a bug on production code and it also helps while developing. 
 In some situations, like async and/or time sensitive code, pausing the execution and running line by line will produce undesired side-effects, so using the log is your only option.
 
 I will talk about it in Part III. See you there!
