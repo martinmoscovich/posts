@@ -8,7 +8,7 @@ Today I want to focus on the server side. In this post I'll talk about step by s
 
 ### Introducing node.js
 
-Back end development in Javascript is quiet new. The platform that made it possible is  [node.js][2]. According to their site:
+Back end development in Javascript is quite new. The platform that made it possible is  [node.js][2]. According to their site:
 
 > Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
 
