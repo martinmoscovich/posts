@@ -55,6 +55,8 @@ There's no level-based filtering and no easy way to distinguish if you use use m
 Also, these methods just print the message without any other useful information. If you have ever worked in other backend technologies, such as Java, you know there are other very useful pieces of info you can retrieve besides the message per se. Think about *filename*, *line number*, the *logging level*, etc.
 
 
+
+
 ### econsole to the rescue!
 
 A while back, I was working on a node.js app and I had an import process that had some complexity and many async calls. In order to debug it, I added many log messages using the console. But the problems I described above made those logs hard to analyze and reduced their utility.
@@ -82,6 +84,7 @@ Also, something I found very useful in order technologies (eg: JUnit in Java) is
 
 
 A picture is worth a thousand words, so compare the difference.
+
 From:
 
 <img src="https://raw.github.com/martinmoscovich/posts/master/img/econsole-off.png" width="500">
@@ -95,16 +98,28 @@ I deliberately excluded any other info (such as time or method name) to avoid an
 
 If I changed the level to, for example, **WARN**, then the first image would look the same but the second would only contain the first two logs. In production, it's a good idea to disable all levels except **ERROR**. You'll get smaller logs with only the critical messages. Then, while debugging or developing, you enable all the levels and get way more info.
 
-If you are interested, I suggest you read the [documentation and the example][9]. It's also open source if you need to change it.
+If you are interested, I suggest you read the [documentation and the example][9]. Please let me know if you have any questions or comments. And also it's open source so you can just grab the code if you prefer!
+
+
 
 
 ### Logging to file
 
 Using the regular console or [econsole][10], you can route the output to a file as I mentioned above.
 
-If you want a more complex file logger, with rolling log files, etc, there are some modules in [NPM][11] that can help you, such as [log][12], [log-it][13], etc (I didn't test them)
+If you want a more complex file logger, with rolling log files, etc, there are some modules in [NPM][11] that can help you, such as [winston][14], [log][12], [log-it][13], etc (I didn't test them)
 
 I chose to leave [econsole][10] small and adjusted to my needs in that moment. Maybe some day I'll work on that!
+
+
+
+## Conclusion
+
+That's all for today. 
+To sum up the series, we remembered the old days of js debugging, then we went through today's tools and techniques for js debugging (specifically logging and step by step debugging), first for front end apps and finally for the back end. 
+I hope you enjoy reading (and maybe learned something)!
+
+Feel free to comment! See you soon!
 
 
   [1]: http://nan-labs.com/javascript/2014/01/03/evolving-of-javascript-debugging/
@@ -120,3 +135,4 @@ I chose to leave [econsole][10] small and adjusted to my needs in that moment. M
   [11]: https://npmjs.org/
   [12]: https://npmjs.org/package/log
   [13]: https://npmjs.org/package/log-it
+  [14]: https://npmjs.org/package/winston
