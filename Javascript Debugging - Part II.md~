@@ -38,7 +38,7 @@ In order to debug using WebStorm, you need to:
 ![][5]
 
 3. Ensure the working directory is correct and specify the initial js file to execute:
-<img src="https://raw.github.com/martinmoscovich/posts/master/img/webstorm-run_configuration.png" width="500">
+<img src="https://raw.github.com/martinmoscovich/posts/master/img/webstorm%20-%20run%20configuration.png" width="500">
 > As you can see above, if you are developing a web application, it is possible to instruct WebStorm to open the WebBrowser automatically.
 
 4. Set breakpoints by clicking the space on the right of the  of code.
@@ -50,7 +50,7 @@ This is how it will look when debugging (notice the variable inspection):
 
 As you can see, you get step by step execution and inspection of variables and objects. You also get the stack trace and a window with the console output (as you would see on the terminal).
 
-<img src="https://raw.github.com/martinmoscovich/posts/master/img/webstorm-console.png" width="600">
+<img src="https://raw.github.com/martinmoscovich/posts/master/img/webstorm%20-%20console.png" width="600">
 
 
 Of course, there are other products you can try.
@@ -107,9 +107,9 @@ I will talk about it in Part III. See you there!
   [1]: http://nan-labs.com/javascript/2014/01/03/evolving-of-javascript-debugging/
   [2]: http://nodejs.org/
   [3]: http://www.jetbrains.com/webstorm/index.html
-  [4]: https://raw.github.com/martinmoscovich/posts/master/img/webstorm-nodejs_icon.png
-  [5]: https://raw.github.com/martinmoscovich/posts/master/img/webstorm-new_run_config.png
-  [6]: https://raw.github.com/martinmoscovich/posts/master/img/webstorm-debug_button.png
+  [4]: https://raw.github.com/martinmoscovich/posts/master/img/webstorm%20-%20nodejs%20icon.png
+  [5]: https://raw.github.com/martinmoscovich/posts/master/img/webstorm%20-%20new%20run%20config.png
+  [6]: https://raw.github.com/martinmoscovich/posts/master/img/webstorm%20-%20debug%20button.png
   [7]: http://www.jetbrains.com/webstorm/whatsnew/screenshots/30/nodeJSDebugging_thumb.png
   [8]: http://www.sublimetext.com/
   [9]: https://github.com/node-inspector/node-inspector
