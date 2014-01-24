@@ -109,17 +109,26 @@ Using the regular console or [econsole][10], you can route the output to a file 
 
 If you want a more complex file logger, with rolling log files, etc, there are some modules in [NPM][11] that can help you, such as [winston][14], [log][12], [log-it][13], etc (I didn't test them)
 
-I chose to leave [econsole][10] small and adjusted to my needs in that moment. Maybe some day I'll work on that!
+I chose to leave [econsole][10] small and adjusted to my needs in that moment.  I'll make improvements in the future.
 
 
 
 ## Conclusion
 
-That's all for today. 
-To sum up the series, we remembered the old days of js debugging, then we went through today's tools and techniques for js debugging (specifically logging and step by step debugging), first for front end apps and finally for the back end. 
-I hope you enjoy reading (and maybe learned something)!
+To sum up the series, we remembered the old days of js debugging, then we went through today's tools and techniques for js debugging (specifically logging and step by step debugging), first for front-end apps and finally for the back-end. 
 
-Feel free to comment! See you soon!
+
+Keep in mind that using debugger won't magically improve your apps' quality. 
+It really helps, but of course you'll still need a good architecture and design, probably using some of the great JS libraries and frameworks available (such as [jQuery][15], [Underscore.js][16], [Backbone.js][17], [AngularJS][18], [Express][19]), as much testing as possible (using libraries such as [Jasmine][20], [Mocha][21], [Sinon.js][22]) and a lot of good judgement!
+
+Setting up an automated building process with a tool like [Grunt][23] will help as well.
+
+
+Thanks to all these techniques, tools, libraries and frameworks (and the devs behind them), building apps in JavaScript is getting easier every day. Who knows what will come next...
+
+That's all for today. I hope you enjoy reading (and maybe learned something), feel free to comment.
+
+See you soon!
 
 
   [1]: http://nan-labs.com/javascript/2014/01/03/evolving-of-javascript-debugging/
@@ -136,3 +145,12 @@ Feel free to comment! See you soon!
   [12]: https://npmjs.org/package/log
   [13]: https://npmjs.org/package/log-it
   [14]: https://npmjs.org/package/winston
+  [15]: http://jquery.com/
+  [16]: http://underscorejs.org/
+  [17]: http://backbonejs.org/
+  [18]: http://angularjs.org/
+  [19]: http://expressjs.com/
+  [20]: http://pivotal.github.io/jasmine/
+  [21]: http://visionmedia.github.io/mocha/
+  [22]: http://sinonjs.org/
+  [23]: http://gruntjs.com/
