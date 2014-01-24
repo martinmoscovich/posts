@@ -31,22 +31,33 @@ If you'd like to use a fully featured IDE, [WebStorm][3] is a great option (but 
 
 In order to debug using WebStorm, you need to:
 
-1. Go to *File* -> *Settings* -> *JavaScript* -> **Node.js and NPM** (or click ![][4] in the toolbar) to configure Node.js integration, in special the path to node executable
-    >WebStorm allows you to install modules from their GUI, both for the project and globally
+ - Go to *File* -> *Settings* -> *JavaScript* -> **Node.js and NPM** (or click ![][4] in the toolbar) to configure Node.js integration, in special the path to node executable
+    > WebStorm allows you to install modules from their GUI, both for the project and globally
 
-2. Add a new *Run configuration* for a node.js application
-![][5]
 
-3. Ensure the working directory is correct and specify the initial js file to execute:
-<img src="https://raw.github.com/martinmoscovich/posts/master/img/webstorm-run_configuration.png" width="500">
-> As you can see above, if you are developing a web application, it is possible to instruct WebStorm to open the WebBrowser automatically.
+ - Add a new *Run configuration* for a node.js application
 
-4. Set breakpoints by clicking the space on the right of the  of code.
-5. Hit the ![enter image description here][6] (*Debug*) button on the toolbar.
+ ![][5]
+
+ 
+ - Ensure the working directory is correct and specify the initial js file to execute:
+
+ <img src="https://raw.github.com/martinmoscovich/posts/master/img/webstorm-run_configuration.png" width="500">
+
+ > As you can see above, if you are developing a web application, it is possible to instruct WebStorm to open the WebBrowser automatically.
+
+
+ - Set breakpoints by clicking the space on the right of the  of code.
+
+
+ - Hit the ![enter image description here][6] (*Debug*) button on the toolbar.
+
+
 
 This is how it will look when debugging (notice the variable inspection):
 
 ![WebStorm debugging][7]
+
 
 As you can see, you get step by step execution and inspection of variables and objects. You also get the stack trace and a window with the console output (as you would see on the terminal).
 
@@ -63,29 +74,29 @@ I've personally used and recommend [Sublime Text][8] for a while (not only for J
 But the real star here is [node-inspector][9]. This great tool allows you to connect to a running node.js instance and debug the code like you'd do it with Chrome DevTools on the front end. 
 The github page contains all the details but I'll give you a quick tour.
 
-1. Install node-inspector globally: ```npm install -g node-inspector``` (you may need administrator rights to do it)
+ - Install node-inspector globally: ```npm install -g node-inspector``` (you may need administrator rights to do it).
 
-2. Go to your project's directory
+ - Go to your project's directory.
 
-3. Run: ```node-inspector```
+ - Run: ```node-inspector```.
 
-3. Run the node application as usual but add the *debug* flag. Eg. ```node --debug app.js```
+ - Run the node application as usual but add the *debug* flag. Eg. ```node --debug app.js```.
 
     >If your application ends quickly (eg: not a web server) or you'd like to debug the very first lines, use ```--debug-brk``` instead of ```--debug```. This will pause the execution at the first line of code and wait for the debugger to connect. 
     Otherwise, by the time you open node-inspector, the program will have already finished.
 
-5. Navigate to http://127.0.0.1:8080/debug?port=5858 (if using default values)
+ - Navigate to http://127.0.0.1:8080/debug?port=5858 (if using default values).
 
-6. A debugging application very similar to Chrome DevTools will appear. 
+ - A debugging application very similar to Chrome DevTools will appear: 
  
-<img src="https://raw.github.com/martinmoscovich/posts/master/img/code-inspector.png" alt="node-inspector screen" width=600>
+ <img src="https://raw.github.com/martinmoscovich/posts/master/img/code-inspector.png" alt="node-inspector screen" width=600>
 
 
-7. Happy debugging!
+ - Happy debugging!
 
 
 
-Among the cool features of *node-inspector*
+Among the cool features of **node-inspector**:
 
 - Conditional breakpoints, step by step execution.
 - Variable values and complex objects inspection and modification.
@@ -94,6 +105,7 @@ Among the cool features of *node-inspector*
 - Easy navigation of the scripts in the project, in order to set the breakpoints in any file
 - Breakpoints are saved between executions on your browser's storage
 - [More...][10]
+
 
 ### Conclusion
 
