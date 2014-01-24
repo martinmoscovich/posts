@@ -4,11 +4,11 @@ This is the third and last part of the famous "Javascript debugging" series.
 
 In [Part II][1] I talked about line by line debugging of [node.js][2] applications. 
 
-Here I will talk about Logging and the console. I have a backend background (Java, .NET, some PHP), so I try to use *(what I consider to be)* good practices I learned in Node.js when possible.
+Here I will talk about Logging and the console. I have a backend background (Java, .NET, some PHP), so I try to use *(what I consider to be)* good practices I learned when working on those technologies in my Node.js apps.
 
-### The Console in node.js
+### The Console in Node.js
 
-[node.js][3] implements the [console API][4], so it can be used just as you do it in the front end.
+[Node.js][3] implements the [console API][4], so it can be used just as you do it in the front end.
 Taken from the documentation:
 > For printing to stdout and stderr. Similar to the console object functions provided by most web browsers, here the output is sent to stdout or stderr.
 
@@ -78,7 +78,7 @@ Two new methods are added (but you are not forced to use them):
  - ```debug()```: alias for ```log()```
  - ```verbose()```: a finer detail level (aka *trace*) than debug.
 
-Also, something I found very useful in order technologies (eg: junit in Java) is the ability to get extra information when logging an error, so in this library, the ```error()``` method is overloaded. You can continue to send only a message, but you can also send an JavaScript error (or a message AND an error) and you'll get the stacktrace. 
+Also, something I found very useful in order technologies (eg: JUnit in Java) is the ability to get extra information when logging an error, so in this library, the ```error()``` method is overloaded. You can continue to send only a message, but you can also send an JavaScript error (or a message AND an error) and you'll get the stacktrace. 
 
 
 A picture is worth a thousand words, so compare the difference.
