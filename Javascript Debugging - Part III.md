@@ -1,10 +1,12 @@
 ### Introduction
 
-This is the third and last part of the famous "Javascript debugging" series.
+This is the third and last part of the *famous* "Javascript debugging" series.
 
-In [Part II][1] I talked about line by line debugging of [node.js][2] applications. 
+In [Part II][1] I talked about step by step debugging of [Node.js][2] applications. 
 
-Here I will talk about Logging and the console. I have a backend background (Java, .NET, some PHP), so I try to use *(what I consider to be)* good practices I learned when working on those technologies in my Node.js apps.
+Now I will talk about Logging and the console. I have a backend background (Java, .NET, some PHP), so, in my Node.js apps, I try to use *(what I consider to be)* good practices I learned when working on those technologies.
+
+<br />
 
 ### The Console in Node.js
 
@@ -27,7 +29,8 @@ Methods | Output | Description
 
 I'm going to focus in the methods that only print messages in this post (```log()```, ```info()```, ```error()```, ```warn()```).
 
-#### Message Formatting
+<br />
+#### **Message Formatting**
 
 Console's methods support the message formatting I explained on [Part I][5]. So, for example, you can do this: 
 ```javascript
@@ -36,14 +39,15 @@ console.log('count: %d', count);
 
 Take a look at [Part I][6] for more details.
 
-#### Output
+<br />
+#### **Output**
 
 In node.js, most console methods prints the output to *stdout* and some to *stderr*.
 You can print them to the terminal or route them to a file to save the logs.
-eg: ```node app.js > execution.log  ```
+eg: ```node app.js > execution.log ```
 
-
-#### Console shortcomings
+<br />
+#### **Console shortcomings**
 
 The console in node.js works well, but there are some problems due to lack of functionality.
 
@@ -54,8 +58,7 @@ There's no level-based filtering and no easy way to distinguish if you use use m
 
 Also, these methods just print the message without any other useful information. If you have ever worked in other backend technologies, such as Java, you know there are other very useful pieces of info you can retrieve besides the message per se. Think about *filename*, *line number*, the *logging level*, etc.
 
-
-
+<br /><br />
 
 ### econsole to the rescue!
 
@@ -87,11 +90,11 @@ A picture is worth a thousand words, so compare the difference.
 
 From:
 
-<img src="https://raw.github.com/martinmoscovich/posts/master/img/econsole-off.png" width="500">
+<img src="/assets/themes/nanlabs/img/posts/2014-02-03-javascript-debugging-part-iii/econsole-off.png" width="500">
 
 To: 
 
-<img src="https://raw.github.com/martinmoscovich/posts/master/img/econsole-on.png" width="500">
+<img src="/assets/themes/nanlabs/img/posts/2014-02-03-javascript-debugging-part-iii/econsole-on.png" width="500">
 
 Of course, think of this in a process with pages and pages of logs. The different colors really help. Knowing the exact line where the log was called is also **very** helpful. 
 I deliberately excluded any other info (such as time or method name) to avoid an info overflow!
@@ -100,8 +103,7 @@ If I changed the level to, for example, **WARN**, then the first image would loo
 
 If you are interested, I suggest you read the [documentation and the example][9]. Please let me know if you have any questions or comments. And also it's open source so you can just grab the code if you prefer!
 
-
-
+<br />
 
 ### Logging to file
 
@@ -111,7 +113,7 @@ If you want a more complex file logger, with rolling log files, etc, there are s
 
 I chose to leave [econsole][10] small and adjusted to my needs in that moment.  I'll make improvements in the future.
 
-
+<br /><br />
 
 ## Conclusion
 
@@ -131,12 +133,12 @@ That's all for today. I hope you enjoy reading (and maybe learned something), fe
 See you soon!
 
 
-  [1]: http://nan-labs.com/javascript/2014/01/03/evolving-of-javascript-debugging/
+  [1]: /javascript/2014/01/27/javascript-debugging-part-ii/
   [2]: http://nodejs.org/
   [3]: http://nodejs.org/api/stdio.html
   [4]: http://nodejs.org/api/stdio.html
-  [5]: http://nan-labs.com/javascript/2014/01/03/evolving-of-javascript-debugging/
-  [6]: http://nan-labs.com/javascript/2014/01/03/evolving-of-javascript-debugging/
+  [5]: /javascript/2014/01/03/evolving-of-javascript-debugging/
+  [6]: /javascript/2014/01/03/evolving-of-javascript-debugging/
   [7]: https://npmjs.org/package/econsole
   [8]: https://github.com/nanlabs/econsole
   [9]: https://npmjs.org/package/econsole
