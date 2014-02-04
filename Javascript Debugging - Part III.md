@@ -16,14 +16,14 @@ Taken from the documentation:
 
 Summary of the methods:
 
-Methods | Output | Description
-----|----|----
-|```log()```, ```info()``` | stdout | Prints the message and a *newline*
-|```error()```, ```warn()``` | stderr | Prints the message and a *newline*
-|```dir()``` | stdout | Prints the content of an object as a string using ```util.inspect```
-|```time()```, ```timeEnd()``` | stdout | ```time()``` marks a time and ```timeEnd()``` stops the timer and prints the message with the associated duration.
-|```trace()``` | stderr | Print a stack trace to stderr of the current position.
-|```assert()``` | - | If the expression evaluates as false an AssertionError with the message is thrown.
+|Methods | Output | Description |
+|----|----|----|
+|```log()```, ```info()``` | stdout | Prints the message and a *newline* |
+|```error()```, ```warn()``` | stderr | Prints the message and a *newline* |
+|```dir()``` | stdout | Prints the content of an object as a string using ```util.inspect``` |
+|```time()```, ```timeEnd()``` | stdout | ```time()``` marks a time and ```timeEnd()``` stops the timer and prints the message with the associated duration. |
+|```trace()``` | stderr | Print a stack trace to stderr of the current position. |
+|```assert()``` | - | If the expression evaluates as false an AssertionError with the message is thrown. |
 
 **Note** ```debug()``` is not supported (```log()``` is used instead).
 
